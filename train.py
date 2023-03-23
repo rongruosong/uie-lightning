@@ -1,6 +1,6 @@
 # coding=utf-8
 import os
-from typing import Any, Optional, Union, List, Dict, Callable
+from typing import Any, Optional, Union, List, Dict, Callable, Iterable
 import torch
 import torch.nn as nn
 from torch.optim import Optimizer
