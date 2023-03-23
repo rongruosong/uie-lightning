@@ -23,7 +23,7 @@ uie-lightning/
 可以直接使用`bash run_finetuning.sh`运行，在`军事关系抽取数据集`的结果：
 |  模型 | Precision | Recall | F1 |
 |  :---: | :--------: | :--------: | :--------: |
-| `uie-base` | 0.86759 | 0.83696 | 0.85200 |
+| `uie-base` |  |  |  |
 
 ## Requirements
 - pytorch>=1.12.1
