@@ -1,5 +1,5 @@
 # 基于UIE的通用信息抽取(pytorch)
-pytorch版本基于UIE底座的纯文本抽取项目，基于paddleNLP的information_extraction/text复现。数据加载基于torchdata实现，训练使用lightning Fabric，metirc基于torchmetrics实现，可以便利地支持分布式训练。数据标注请参考:[label_studio标注文档](https://github.com/PaddlePaddle/PaddleNLP/blob/develop/applications/information_extraction/label_studio_text.md) 。
+基于UIE模型底座实现的pytorch版本纯文本信息抽取项目，基于paddleNLP的information_extraction/text复现。数据加载使用torchdata实现，数据预处理更加灵活。训练使用lightning Fabric，metirc基于torchmetrics实现，可以便利地支持分布式训练。数据标注请参考:[label_studio标注文档](https://github.com/PaddlePaddle/PaddleNLP/blob/develop/applications/information_extraction/label_studio_text.md) 。
 
 ## 代码结构
 ```
