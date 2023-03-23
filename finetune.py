@@ -57,11 +57,10 @@ def main():
             "weight_decay": 0.0,
         },
     ]
-    # optimizer = AdamW(optimizer_grouped_parameters, lr=args.learning_rate, eps=args.adam_epsilon)
-    optimizer = AdamW(model.parameters(), lr=args.learning_rate, eps=args.adam_epsilon)
+    optimizer = AdamW(optimizer_grouped_parameters, lr=args.learning_rate, eps=args.adam_epsilon)
     estimated_stepping_batches = math.ceil(len(train_loader) / args.grad_accum_steps) * max(args.max_epochs, 1)
-    num_warmup_steps = args.warmup * estimated_stepping_batches
     """
+    num_warmup_steps = args.warmup * estimated_stepping_batches
     scheduler = get_linear_schedule_with_warmup(
         optimizer,
         num_warmup_steps=num_warmup_steps,
