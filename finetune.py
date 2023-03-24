@@ -20,7 +20,7 @@ def main():
     fabric = Fabric(loggers=logger)
     fabric.seed_everything(args.seed)
     fabric.print('world_size {}, global_rank {}'.format(fabric.world_size, fabric.global_rank))
-    torch.set_float32_matmul_precision('high')
+    # torch.set_float32_matmul_precision('high')
     # model
     fabric.print('load model ...')
     tokenizer = BertTokenizerFast.from_pretrained(args.vocab_path)
