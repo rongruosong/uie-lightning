@@ -3,6 +3,7 @@ CURRENT_DIR=`pwd`
 
 accelerator="gpu"
 strategy="ddp"
+devices=1
 
 train_data_path=$CURRENT_DIR/data/train.txt
 test_data_path=$CURRENT_DIR/data/dev.txt
@@ -31,7 +32,7 @@ seed=42
 
 lightning run model --accelerator=$accelerator \
     --strategy=$strategy \
-    --devices=1 \
+    --devices=$devices \
     finetune.py \
     --train_data_path $train_data_path \
     --test_data_path $test_data_path \
